@@ -1,0 +1,16 @@
+.button{
+    &:not(.button--primary){
+        background-color: stencilColor('button--default-backgroundColor');
+        &:hover , &:focus{
+            background-color: stencilColor('button--default-backgroundColorHover');
+            color:stencilColor('button--default-colorHover');
+        }
+    }
+}
+
+//container
+.container{
+    max-width: 1162px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
