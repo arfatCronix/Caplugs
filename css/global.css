@@ -1,0 +1,47 @@
+.button:not(.button--primary) {
+  background-color: stencilColor("button--default-backgroundColor");
+}
+.button:not(.button--primary):hover, .button:not(.button--primary):focus {
+  background-color: stencilColor("button--default-backgroundColorHover");
+  color: stencilColor("button--default-colorHover");
+}
+
+.container {
+  max-width: 1162px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
+  width: 100vw;
+  background: rgba(163, 156, 149, 0.32);
+  color: stencilColor("color-textSecondary");
+  padding: 12px 20px;
+  text-decoration: none;
+  z-index: 100;
+  font-family: stencilFontFamily("headings-font");
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+  .back-to-top-mobile {
+    display: none; /* Hide on desktop */
+    width: 120px;
+  }
+}
