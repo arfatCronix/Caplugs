@@ -17,7 +17,8 @@
 
 
 
-// BACK-TO-TOP BUTTON
+
+
 
 // BACK-TO-TOP BUTTON
 html {
@@ -41,10 +42,9 @@ html {
         font-weight: 700;
         line-height: 1.25;
 
-        @media (min-width: 768px) {
+        @include breakpoint("medium") {
             display: none; // Hide on desktop
             width: 120px;
         }
     }
 }
-
