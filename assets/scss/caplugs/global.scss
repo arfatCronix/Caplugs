@@ -19,31 +19,32 @@
 
 // BACK-TO-TOP BUTTON
 
+// BACK-TO-TOP BUTTON
 html {
     scroll-behavior: smooth;
 }
 
-.back-to-top-mobile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    width: 100vw;
-    background: rgba(163, 156, 149, 0.32);
-    color: stencilColor("color-textSecondary");
-    padding: 12px 20px;
-    text-decoration: none;
-    z-index: 100;
-    font-family: stencilFontFamily("headings-font");
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.25; 
-}
-
-
-@media (min-width: 768px) {
+.back-to-top-area {
     .back-to-top-mobile {
-        display: none; /* Hide on desktop */
-        width: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        width: 100vw;
+        background: rgba(163, 156, 149, 0.32);
+        color: stencilColor("color-textSecondary");
+        padding: 12px 20px;
+        text-decoration: none;
+        z-index: 100;
+        font-family: stencilFontFamily("headings-font");
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.25;
+
+        @media (min-width: 768px) {
+            display: none; // Hide on desktop
+            width: 120px;
+        }
     }
 }
+
